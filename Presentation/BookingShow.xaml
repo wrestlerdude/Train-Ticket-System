@@ -1,0 +1,16 @@
+﻿<Window x:Class="Presentation.BookingShow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Presentation"
+        mc:Ignorable="d"
+        Title="BookingShow" Height="366" Width="783.613">
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="467*"/>
+			<ColumnDefinition Width="309*"/>
+		</Grid.ColumnDefinitions>
+		<DataGrid x:Name="bookingDataGrid" HorizontalAlignment="Left" Height="315" Margin="10,10,0,0" VerticalAlignment="Top" Width="756" AutoGenerateColumns="true" AutoGeneratingColumn="DataGrid_OnAutoGeneratingColumn" Grid.ColumnSpan="2"/>
+	</Grid>
+</Window>

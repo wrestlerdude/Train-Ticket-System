@@ -1,0 +1,46 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Presentation"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="Presentation.TrainDetails"
+        mc:Ignorable="d"
+        Title="TrainDetails" Height="356" Width="296.891">
+	<Grid x:Name="detailsGrid">
+		<TextBlock x:Name="idTxtBlk" HorizontalAlignment="Left" Margin="10,16,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" RenderTransformOrigin="4.75,0.625" Height="16" Width="120" TextAlignment="Center"/>
+		<TextBlock x:Name="departTxtBlk" HorizontalAlignment="Left" Margin="10,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Departure" Width="120" TextAlignment="Center"/>
+		<TextBlock x:Name="destTxtBlk" HorizontalAlignment="Left" Margin="10,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Destination" Width="120" TextAlignment="Center"/>
+		<TextBlock x:Name="typeTxtBlk" HorizontalAlignment="Left" Margin="10,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Type" RenderTransformOrigin="-0.323,0.94" Width="120" TextAlignment="Center"/>
+		<TextBlock x:Name="intermediateTxtBlk" HorizontalAlignment="Left" Margin="170,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Intermediate"/>
+		<TextBlock x:Name="timeTxtBlk" HorizontalAlignment="Left" Margin="130,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Departure Time (hh:mm)" Width="148" TextAlignment="Center" Height="19"/>
+		<TextBlock x:Name="dayTxtBlk" HorizontalAlignment="Left" Margin="145,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Departure Day" Width="120" TextAlignment="Center" RenderTransformOrigin="1.725,-4.261"/>
+		<TextBox x:Name="idTxtBox" HorizontalAlignment="Left" Height="23" Margin="10,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+		<ComboBox x:Name="departCombo" HorizontalAlignment="Left" Margin="10,86,0,0" VerticalAlignment="Top" Width="120">
+			<System:String>Edinburgh (Waverley)</System:String>
+			<System:String>London (Kings Cross)</System:String>
+		</ComboBox>
+		<ComboBox x:Name="typeCombo" HorizontalAlignment="Left" Margin="10,182,0,0" VerticalAlignment="Top" Width="120">
+			<System:String>Express</System:String>
+			<System:String>Stopping</System:String>
+			<System:String>Sleeper</System:String>
+		</ComboBox>
+		<TextBox x:Name="timeTxtBox" HorizontalAlignment="Left" Height="23" Margin="145,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+		<CheckBox x:Name="peterboroughChk" Content="Peterborough" HorizontalAlignment="Left" Margin="145,33,0,0" VerticalAlignment="Top"/>
+		<CheckBox x:Name="darlingtonChk" Content="Darlington" HorizontalAlignment="Left" Margin="145,53,0,0" VerticalAlignment="Top"/>
+		<CheckBox x:Name="yorkChk" Content="York" HorizontalAlignment="Left" Margin="145,73,0,0" VerticalAlignment="Top"/>
+		<CheckBox x:Name="newcastleChk" Content="Newcastle" HorizontalAlignment="Left" Margin="145,93,0,0" VerticalAlignment="Top"/>
+		<DatePicker x:Name="dayDatePick" HorizontalAlignment="Left" Margin="145,182,0,0" VerticalAlignment="Top" Width="120"/>
+		<Button x:Name="addBtn" Content="Add" HorizontalAlignment="Left" Margin="106,265,0,0" VerticalAlignment="Top" Width="75" Click="AddBtn_Click"/>
+		<TextBlock x:Name="successTxtBlk" HorizontalAlignment="Left" Margin="10,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="268" Text="Express Trains will ignore intermediates selected."/>
+		<TextBlock x:Name="firstclassTxtBlk" HorizontalAlignment="Left" Margin="83,216,0,0" TextWrapping="Wrap" Text="First Class" VerticalAlignment="Top" Width="120" TextAlignment="Center"/>
+		<ComboBox x:Name="firstclassCombo" HorizontalAlignment="Left" Margin="83,237,0,0" VerticalAlignment="Top" Width="120">
+			<System:String>True</System:String>
+			<System:String>False</System:String>
+		</ComboBox>
+		<ComboBox x:Name="destCombo" HorizontalAlignment="Left" Margin="10,139,0,0" VerticalAlignment="Top" Width="120">
+			<System:String>Edinburgh (Waverley)</System:String>
+			<System:String>London (Kings Cross)</System:String>
+		</ComboBox>
+	</Grid>
+</Window>

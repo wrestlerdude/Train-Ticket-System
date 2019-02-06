@@ -1,0 +1,64 @@
+﻿<Window x:Class="Presentation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Presentation"
+        mc:Ignorable="d"
+        Title="Rail Network Planner" Height="265" Width="492.788">
+	<Grid>
+		<Button x:Name="addTrainBtn" Content="Add a Train" HorizontalAlignment="Left" Margin="10,43,0,0" VerticalAlignment="Top" Width="174" Click="AddTrainBtn_Click" FontFamily="Noto Sans Light" Height="25" Cursor="Hand">
+			<Button.Effect>
+				<DropShadowEffect/>
+			</Button.Effect>
+		</Button>
+		<TextBlock x:Name="titleTxtBlk" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="10,10,0,0" Height="28" Width="465" FontSize="18" FontFamily="Noto Sans Light" TextAlignment="Center"><Run Text="Rail Networ"/><Run Text="k Planner"/></TextBlock>
+		<Button x:Name="addBookingBtn" Content="Add a Passenger" HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top" Width="174" FontFamily="Noto Sans Light" Height="26" Cursor="Hand" Click="AddBookingBtn_Click">
+			<Button.Effect>
+				<DropShadowEffect/>
+			</Button.Effect>
+		</Button>
+		<Button x:Name="saveBtn" Content="Save" HorizontalAlignment="Left" Margin="295,115,0,0" VerticalAlignment="Top" Width="174" FontFamily="Noto Sans Light" Height="26" Cursor="Hand" RenderTransformOrigin="0.033,0.359" Click="SaveBtn_Click">
+			<Button.Effect>
+				<DropShadowEffect/>
+			</Button.Effect>
+		</Button>
+		<Button x:Name="loadBtn" Content="Load" HorizontalAlignment="Left" Margin="295,153,0,0" VerticalAlignment="Top" Width="174" FontFamily="Noto Sans Light" Height="26" Cursor="Hand" RenderTransformOrigin="0.033,0.359" Click="LoadBtn_Click">
+			<Button.Effect>
+				<DropShadowEffect/>
+			</Button.Effect>
+		</Button>
+		<Button x:Name="searchTrainDayBtn" Content="Search Trains by Day" HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top" Width="174" FontFamily="Noto Sans Light" Height="26" Cursor="Hand" Click="SearchTrainDayBtn_Click">
+			<Button.Effect>
+				<DropShadowEffect/>
+			</Button.Effect>
+		</Button>
+		<Button x:Name="searchPassengerTrainBtn" Content="Search Bookings by Train" HorizontalAlignment="Left" Margin="10,153,0,0" VerticalAlignment="Top" Width="174" FontFamily="Noto Sans Light" Height="26" Cursor="Hand" Click="SearchPassengerTrainBtn_Click">
+			<Button.Effect>
+				<DropShadowEffect/>
+			</Button.Effect>
+		</Button>
+		<Image x:Name="trainIMG" Margin="189,43,181,0" Source="train-royalty-free.png" VerticalAlignment="Top" HorizontalAlignment="Left" Height="104" RenderTransformOrigin="0.507,0.5" Width="115"/>
+		<Button x:Name="searchTrainTwoBtn" Content="Search Train by Two Stations" HorizontalAlignment="Left" Margin="295,43,0,0" VerticalAlignment="Top" Width="174" FontFamily="Noto Sans Light" Height="26" Cursor="Hand" Click="SearchTrainTwoBtn_Click">
+			<Button.Effect>
+				<DropShadowEffect/>
+			</Button.Effect>
+		</Button>
+		<Button x:Name="calculateFareBtn" Content="Calculate Booking Fares" HorizontalAlignment="Left" Margin="295,78,0,0" VerticalAlignment="Top" Width="174" FontFamily="Noto Sans Light" Height="26" Cursor="Hand" Click="CalculateFareBtn_Click">
+			<Button.Effect>
+				<DropShadowEffect/>
+			</Button.Effect>
+		</Button>
+		<Button x:Name="showTrainsBtn" Content="Show Trains" HorizontalAlignment="Left" Margin="136,195,0,0" VerticalAlignment="Top" Width="96" FontFamily="Noto Sans Light" Height="20" Cursor="Hand" FontSize="10" Click="ShowTrainsBtn_Click">
+			<Button.Effect>
+				<DropShadowEffect/>
+			</Button.Effect>
+		</Button>
+		<Button x:Name="showBookingsBtn" Content="Show Bookings" HorizontalAlignment="Left" Margin="247,195,0,0" VerticalAlignment="Top" Width="96" FontFamily="Noto Sans Light" Height="20" Cursor="Hand" FontSize="10" Click="ShowBookingsBtn_Click">
+			<Button.Effect>
+				<DropShadowEffect/>
+			</Button.Effect>
+		</Button>
+
+	</Grid>
+</Window>
